@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js.js"></script>
+    <title>formulario</title>
+</head>
+<body>
+   <div class="contendor-formulario">
+       <div class="membrete">
+           <div class="banner">
+               <h3>CENSO DE VENEZOLANOS EN EL NORDESTE BRASILEÑO 2019 </h3>
+           </div>
+           <div class="banderaVen">
+                <div style="background:#EDF311"></div>
+                <div style="background:#2E56E1"></div>
+                <div style="background:#F92B13"></div>
+           </div>
+       </div>
+       <form action="POST">
+            <div class="formulario">
+                    <div class="personales form-group" >
+                        <div class="titulo-personales">
+                                <h2>Datos Personales</h2>
+                        </div>
+                        <div class="nombre">
+                            <label for="nombre">Nombre:</label>
+                            <input name="nombre" type="text" placeholder="Ingrese su Nombre" class="form-control" maxlength="30" id="nombre">
+                            <hr>
+                        </div>
+                        <div class="apellido">
+                            <label for="apellido">Apellido:</label>
+                            <input name="apellido" type="text" placeholder="Ingrese su Apellido" class="form-control" maxlength="30" id="apellido">
+                            <hr>
+                        </div>
+                        <div class="cedula">
+                            <label for="ci">Nº Céluda de identidad:</label>
+                            <input name="ci" type="number" placeholder="Céluda de identidad" class="form-control" max="99999999" id="ci">  
+                        </div>
+                        <div class="pasaporte">
+                                <label for="pasaporte">Pasaporte:</label>
+                                <select name="pasaporte" id="pasaporte" class="form-control">
+                                    <option value="null">Pasaporte</option>
+                                    <option value="true">si</option>
+                                    <option value="false">no</option>
+                                </select>
+                            </div>       
+                        <div class="vencimiento-pass" style="display:none">
+                                <label for="vencimiento-pass">Vencimiento:</label>
+                                <input type="date" placeholder="dd/mm/yyy" class="form-control" id="vencimiento-passport">
+                        </div>
+                                             
+                        <div class="nacimiento">
+                            <label for="nacimiento">Fecha de nacimiento:</label>
+                            <input type="date" placeholder="dd/mm/yyy" class="form-control" id="fecha-nacimiento">
+                        </div>
+                        <div class="nacimiento-titulo">
+                            <label for="lugar">Lugar de Nacimiento:</label>
+                        </div>
+                        <div class="estado">
+                            <select name="estado" id="estado-ve" class="form-control">
+                            <option value="null">Estado</option>
+                            </select>
+                        </div>
+                        <div class="municipio" style="display:none">
+                            <select name="municipio" id="municipio-ve" class="form-control">
+                            <option value="null">Municipio</option>
+                            </select>
+                        </div>
+                        <div class="parroquia" style="display:none">
+                            <select name="parroquia" id="parroquia-ve" class="form-control">
+                            <option value="null">Parroquia</option>
+                            </select>
+                        </div>
+                        <div class="edo-civil">
+                            <label for="estado-civil">Estado Civil:</label>
+                                <select name="estado-civil" id="estado-civil" class="form-control">
+                                        <option value="null">Estado-Civil</option>
+                                        <option value="soltero">Soltero</option>
+                                        <option value="casado">Casado</option>
+                                        <option value="concubinato">concubinato</option>
+                                        <option value="viudo">Viudo</option>
+                                </select>
+                            <hr>
+                        </div>
+                        <div class="sexo">
+                            <label for="sexo">Sexo</label>
+                                <select name="sexo" id="sexo" class="form-control">
+                                    <option value="null">Sexo</option>
+                                    <option value="hombre">Hombre</option>
+                                    <option value="mujer">Mujer</option>
+                                </select>
+                        </div>
+                        <div class="profesion">
+                                <label for="profesion">Profesión:</label>
+                                <input type="text" placeholder="Profesión" class="form-control" id="profesion">
+                        </div>          
+                        <div class="grado">
+                            <label for="grado">Grado de instrución:</label>
+                            <input type="text" placeholder="grado de instrución" class="form-control" id="grado">
+                        </div>
+                        <div class="hijos">
+                            <label for="hijos">¿Tiene hijos menores de edad viviendo con usted?:</label>
+                            <br>
+                            <label for="si">si</label> <input type="radio" name="hijos" value="si" class="form-control" id="si" >
+                            <label for="no">no</label> <input type="radio" name="hijos" value="no" class="form-control" id="no">
+                        </div>
+                        <div class="ninos" style="display:none">
+                                <label for="ninos">Cantidad de Niños:</label>
+                                    <input type="number" placeholder="cantidad de niños:" class="form-control" id="ninos">
+                        </div>
+                        <div class="ninas" style="display:none">
+                                <label for="ninas">Cantidad de Niñas:</label>
+                                <input type="number" placeholder="cantidad de niñas:" class="form-control" id="ninas">
+                        </div>
+                        <div class="brasil">
+                                <label for="brasil">Dirección de habitación en brasil:</label>
+                        </div>
+                        <div class="estado-br">
+                                <select name="estado-br" id="estado-br" class="form-control">
+                                <option value="null">Estado</option>
+                                </select>
+                            </div>
+                            <div class="municipio-br" style="display:none">
+                                <select name="municipio-br" id="municipio-br" class="form-control">
+                                <option value="null">Municipio</option>
+                                </select>
+                            </div>
+                            <div class="parroquia-br" style="display:none">
+                                <select name="parroquia-br" id="parroquia-br" class="form-control">
+                                <option value="null">Parroquia</option>
+                                </select>
+                        </div>
+                        <div class="email">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" placeholder="ejemplo@email.com" class="form-control" id="email">
+                            </div>
+                        <div class="telefono">
+                                <label for="telefono">Telefono:</label>
+                                <input type="text" placeholder="(81) 99999-9999" class="form-control" id="telefono">
+                        </div>
+                        <div class="contacto-em">
+                            <h2>Contacto de emergencia Venezuela y/o Brasil</h2>
+                        </div>
+                        <div class="num-em">
+                                <label for="num-em">Numero:</label>
+                                <input type="text" placeholder="Numero de emergencia" class="form-control">
+                        </div>
+                            
+                        <div class="cont-em">
+                                <label for="cont-em">Parestesco y nombre:</label>
+                                <input type="text" placeholder="Tipo de parentesco y nombre" class="form-control">
+                        </div>           
+                    </div>
+                    <div class="migratorios form-group">
+                        <div class="titulo-migratorios">
+                            <h2>Datos Migratorios</h2>
+                        </div>
+                        <div class="consular">
+                                <label for="consular">Tiene registro consular?:</label>
+                                <select name="consular" id="consular" class="form-control">
+                                    <option value="null">registro consular</option>
+                                    <option value="true">si</option>
+                                    <option value="false">no</option>
+                                </select>
+                        </div>
+                        <div class="rne">
+                                <label for="rne">Tiene RNE?:</label>
+                                <select name="rne" id="rne" class="form-control">
+                                    <option value="null">RNE</option>
+                                    <option value="true">si</option>
+                                    <option value="false">no</option>
+                                </select>
+                        </div>
+                        <div class="llegada">
+                                <label for="llegada">Año en que entró a Brasil:</label>
+                                <input type="date" placeholder="Año de entrada a Brasil" class="form-control" id="llegada">
+                        </div>
+                        <div class="situacion">
+                                <label for="situacion">Situación migratoria actual:</label>
+                                <select name="situacion" id="situacion" class="form-control">
+                                    <option value="null">situacion</option>
+                                    <option value="indocumentando">Indocumentando</option>
+                                    <option value="refugiado">Refugiado</option>
+                                    <option value="residente-tempotal">Residente temporal</option>
+                                    <option value="residente-permanente">Recidente permanente</option>
+                                    <option value="nacionalizado">Nacionalizado</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="educativos-laborales form-group">
+                            <div class="titulo">
+                                <h2>Datos educativos o laborales</h2>
+                            </div>
+                            <div class="situacion-lb">
+                                    <label for="situacion-lb">Situación laboral:</label>
+                                    <select name="situacion-laboral" id="situacion-laboral" class="form-control">
+                                        <option value="null">situacion-laboral</option>
+                                        <option value="trabajo">Trabajo</option>
+                                        <option value="estudio">Estudio</option>
+                                        <option value="desempleado">Desempleado</option>
+                                    </select>
+                            </div>
+                            <div class="area-lb">
+                                    <label for="area-lb">Area de trabajo o estudios:</label>
+                                    <input type="text" placeholder="Area de trabajo o estudios:" class="form-control" id="trabajo">
+                            </div>
+                            <div class="enviar">
+                                    <button class="btn btn-primary btn-lg" id="enviar-info">enviar</button>
+                                </div>
+                            <div class="mensaje">
+                                    <p>SI USTED CONOCE DE ALGUNA VACANTE (EMPLEO) QUE PUEDA AYUDAR A OTRO VENEZOLANO, COMUNIQUESE CON NOSOTROS A
+                                            TRAVES DEL SIGUIENTE CORREO ELECTRONICO. 
+                                    </p>
+                                    <br>
+                                    <p> <span> <img src="https://img.icons8.com/color/420/gmail.png" alt=""></span> venezolanosnordestebrasil@gmail.com</p>
+                            </div>
+                    </div>
+           </div>
+       </form>
+       
+   </div>
+</body>
+</html>

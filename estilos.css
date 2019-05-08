@@ -1,0 +1,73 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.contendor-formulario{
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75);
+    padding:20px;
+}
+
+.contendor-formulario h2 {
+    text-align: center;
+}
+
+.banderaVen{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    background-color:rgba(0,0,0,0.55);
+    background-image: url(image/banner.jpg);
+    background-blend-mode:multiply;
+    background-position-y:32%;
+    height:200px;
+}
+
+.banner h3 {
+    text-align: center;
+    color: white;
+    font-size:48px;
+    font-weight: bold;
+}
+
+.titulo-personales h2{
+    font-size: 40px;
+}
+
+input[type='radio']{
+    display: inline;
+    width:10px;
+}
+.hijos{
+    margin-top: 20px;
+}
+.hijos > label{
+    position: relative;
+    top: -16px;
+}
+
+.consular{
+    padding-right: 15px;
+}
+
+.mensaje p{
+    text-align: center;
+}
+
+.mensaje > p:nth-child(3) > span:nth-child(1) > img:nth-child(1) {
+    width: 30px;
+}
+
+.enviar button{
+    width: 288px;
+}

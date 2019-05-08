@@ -1,0 +1,233 @@
+.contendor-formulario{
+    display: grid;
+    grid-template-areas: "membrete"
+                         "formulario";
+    
+
+}
+
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    grid-template-areas: "personales"
+                         "migratorios"
+                         "educativos-laborales";
+}
+.membrete {
+    grid-area: membrete;
+}
+
+.membrete{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10px;
+    justify-items: center;
+    
+}
+.banner{
+    grid-row: 1/-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banderaVen{
+    grid-row: 2/-2;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+ .personales {
+    grid-area: personales;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    grid-template-areas: "titulo                    titulo                    titulo"
+                         "nombre                    nombre                    nada "
+                         "apellido                  apellido                  nada"
+                         "pasaporte                 vencimiento-pass          vacio"
+                         "cedula                    nacimiento                vacio"
+                         "nacimiento-titulo         nacimiento-titulo         nacimiento-titulo"
+                         "estado                    municipio                 parroquia"
+                         "edo-civil                 sexo                      edad"
+                         "profesion                grado                      grado"
+                         "hijos                     hijos                     hijos"
+                         "ninos                     ninas                     NADA"
+                         "brasil                    brasil                    brasil"
+                         "estado-br                 municipio-br              parroquia-br"
+                         "email                     email                     telefono"
+                         "contacto-em               contacto-em               contacto-em"
+                         "num-em                    cont-em                   nadita";
+}
+
+.contacto-em{
+    grid-area: contacto-em;
+}
+.num-em{
+    grid-area: num-em;
+}
+.cont-em{
+    grid-area: cont-em;
+}
+.titulo-personales{
+    margin-top: 30px;
+    grid-area: titulo;
+}
+
+.nombre{
+    grid-area: nombre;
+}
+
+.apellido{
+    grid-area: apellido;
+}
+
+.cedula{
+    grid-area: cedula;
+}
+
+.nacimiento{
+    grid-area: nacimiento;
+}
+
+.nacimiento-titulo{
+    grid-area: nacimiento-titulo;
+}
+
+.estado{
+    grid-area: estado;
+}
+
+.municipio{
+    grid-area: municipio;
+}
+
+.parroquia{
+    grid-area: parroquia;
+}
+
+.edo-civil{
+    grid-area: edo-civil;
+}
+
+.sexo{
+    grid-area: sexo;
+}
+
+.pasaporte{
+    grid-area: pasaporte;
+}
+
+.vencimiento-pass{
+    grid-area: vencimiento-pass;
+}
+
+.profesion{
+    grid-area: profesion;
+}
+
+.grado{
+    grid-area: grado;
+}
+
+.hijos{
+    grid-area: hijos;
+}
+
+.sexo-hijos{
+    grid-area: sexo-hijos;
+}
+
+.ninos{
+    grid-area: ninos;
+}
+
+.ninas{
+    grid-area: ninas;
+}
+.brasil{
+    grid-area:brasil;
+}
+
+.estado-br{
+    grid-area: estado-br;
+}
+
+.municipio-br{
+    grid-area:  municipio-br;
+}
+
+.parroquia-br{
+    grid-area: parroquia-br;
+}
+
+.email{
+    grid-area: email;
+}
+
+.telefono{
+    grid-area: telefono;
+}
+
+.migratorios{
+    grid-area: migratorios;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "titulo-migratorios titulo-migratorios"
+                         "consular           rne"
+                         "llegada            situacion";
+}
+
+.titulo-migratorios{
+    grid-area: titulo-migratorios;
+}
+
+.consular{
+    grid-area: consular;
+}
+
+.rne{
+    grid-area: rne;
+}
+.llegada{
+    grid-area: llegada;
+}
+
+.situacion{
+    grid-area: situacion;
+}
+
+.educativos-laborales{
+    grid-area: educativos-laborales;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    grid-template-areas: "titulo-EL     titulo-EL"
+                         "situacion-lb  area-lb"
+                         "enviar        enviar"
+                         "mensaje       mensaje";
+
+}
+
+.educativos-laborales .titulo{
+    grid-area: titulo-EL;
+}
+
+.situacion-lb{
+    grid-area: situacion-lb;
+}
+
+.area-lb{
+    grid-area: area-lb;
+}
+
+.mensaje{
+    grid-area: mensaje;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+    grid-area: enviar;
+}
