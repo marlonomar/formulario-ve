@@ -53,7 +53,7 @@
                          "hijos                     hijos                     hijos"
                          "ninos                     ninas                     NADA"
                          "brasil                    brasil                    brasil"
-                         "estado-br                 municipio-br              parroquia-br"
+                         "estado-br                 cidade-br                 nadaaa"
                          "email                     email                     telefono"
                          "contacto-em               contacto-em               contacto-em"
                          "num-em                    cont-em                   nadita";
@@ -152,13 +152,10 @@
     grid-area: estado-br;
 }
 
-.municipio-br{
-    grid-area:  municipio-br;
+.cidade-br{
+    grid-area:cidade-br;
 }
 
-.parroquia-br{
-    grid-area: parroquia-br;
-}
 
 .email{
     grid-area: email;

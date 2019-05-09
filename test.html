@@ -1,3 +1,38 @@
-for (let i = 0; i < pais.length; i++) {
-    $("#estado-ve").append("<option value="+pais[i].estado+">"+pais[i].estado+"</option>");  
+venezuelaES();
+function venezuelaES(){
+    $.ajax({
+        url:"./venezuela.json",
+        data:"GET",
+        dataType:"JSON",
+        success:(pais)=>{
+           
+            for (let i = 0; i < pais.length; i++) {
+                $("#estado-ve").append(`<option value='${pais[i].id_estado}'>${pais[i].estado}</option>`);  
+            }
+        }
+    });
 }
+
+$(document).on('change',"#estado-ve",function(){
+    let municipio = $(this).val();
+    console.log(municipio); 
+})
+/** */
+
+brasilES();
+function brasilES(){
+    $.ajax({
+        url:"./brasil.json",
+        data:"GET",
+        dataType:"JSON",
+        success:(pais)=>{
+            //console.log(pais[0].estados[3].cidades)
+           for (let i = 0; i < pais[0].estados.length; i++) {
+            $("#estado-br").append(`<option value='${pais[0].estados[i].nome}' sigla='${pais[0].estados[i].sigla}'>${pais[0].estados[i].nome}</option>`); 
+           }
+        }
+    });
+}
+
+
+
