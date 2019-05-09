@@ -32,6 +32,8 @@ $(document).ready(function(){
   const lugares =(lugar1,lugar2)=>{
       $(lugar1).on('click',function(){
             $(lugar2).show();
+            let estadove = $(this).val();
+            localStorage.setItem('estadove',estadove);
       })
   }
    /**venezuela*/
@@ -52,7 +54,7 @@ $(document).ready(function(){
             dataType:"JSON",
             success:function(pais){
                 for (let i = 0; i < pais.length; i++) {
-                    $("#estado-ve").append("<option value="+pais[i].estado+">"+pais[i].estado+"</option>");  
+                    $("#estado-ve").append(`<option value='${pais[i].estado}' index='${pais[i].id_estado}'>${pais[i].estado}</option>`);  
                 }
             }
         });
@@ -67,8 +69,9 @@ $(document).ready(function(){
             data:"GET",
             dataType:"JSON",
             success:function(pais){
+                console.log(pais)
                for (let i = 0; i < pais[0].estados.length; i++) {
-                $("#estado-br").append("<option value="+pais[0].estados[i].nome+">"+pais[0].estados[i].nome+"</option>"); 
+                $("#estado-br").append(`<option value='${pais[0].estados[i].nome}' sigla='${pais[0].estados[i].sigla}'>${pais[0].estados[i].nome}</option>`); 
                }
             }
         });
