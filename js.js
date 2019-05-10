@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+const form =()=>{
+    $("input , select").addClass('form-control');
+}
+form();
 const ninos = ()=>{
     $("#si").click(function(){
         $(".ninos").show();

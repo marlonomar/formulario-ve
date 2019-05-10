@@ -59,6 +59,9 @@
                          "num-em                    cont-em                   nadita";
 }
 
+.edad{
+    grid-area: edad;
+}
 .contacto-em{
     grid-area: contacto-em;
 }
@@ -228,3 +231,150 @@
     justify-content: center;
     grid-area: enviar;
 }
+
+@media screen and (max-width: 900px) {
+    
+    .personales {
+        grid-template-areas: "titulo                    titulo                    titulo"
+                             "nombre                    nombre                    nombre "
+                             "apellido                  apellido                  apellido"
+                             "pasaporte                 vencimiento-pass          vencimiento-pass"
+                             "cedula                    nacimiento                nacimiento"
+                             "nacimiento-titulo         nacimiento-titulo         nacimiento-titulo"
+                             "estado                    municipio                 parroquia"
+                             "edo-civil                 sexo                      edad"
+                             "profesion                grado                      grado"
+                             "hijos                     hijos                     hijos"
+                             "ninos                     ninas                     NADA"
+                             "brasil                    brasil                    brasil"
+                             "estado-br                 cidade-br                 nadaaa"
+                             "email                     email                     telefono"
+                             "contacto-em               contacto-em               contacto-em"
+                             "num-em                    cont-em                   nadita";
+    }
+
+  div.banner h3{
+        font-size: 30px;
+    }
+
+    .contendor-formulario h2{
+        font-size: 30px !important;
+    }
+
+
+  }
+
+  @media screen and (max-width: 658px) {
+
+      
+    .personales {
+        grid-template-areas: "titulo                    titulo                    titulo"
+                             "nombre                    nombre                    nombre "
+                             "apellido                  apellido                  apellido"
+                             "pasaporte                 vencimiento-pass          vencimiento-pass"
+                             "cedula                    nacimiento                nacimiento"
+                             "nacimiento-titulo         nacimiento-titulo         nacimiento-titulo"
+                             "estado                    municipio                 parroquia"
+                             "edo-civil                 sexo                      edad"
+                             "profesion                 grado                     grado"
+                             "hijos                     hijos                     hijos"
+                             "ninos                     ninas                     NADA"
+                             "brasil                    brasil                    brasil"
+                             "estado-br                 cidade-br                 nadaaa"
+                             "email                     email                     telefono"
+                             "contacto-em               contacto-em               contacto-em"
+                             "num-em                    cont-em                   nadita";
+    }
+    div.banner h3 {
+        font-size: 18px;
+    }
+
+    label{
+        font-size: 13px;
+    }
+
+    .contendor-formulario h2{
+        font-size: 20px !important;
+    }
+
+    #pasaporte{
+        width: 200px;
+    }
+  }
+  
+  @media screen and (max-width:  422px) {
+
+    .personales {
+        grid-template-rows: repeat( auto-fit, minmax(1fr, 1fr) );
+        grid-template-areas: "titulo                    titulo"
+                             "nombre                    nombre"
+                             "apellido                  apellido"
+                             "pasaporte                 vencimiento-pass"
+                             "cedula                    nacimiento"
+                             "nacimiento-titulo         nacimiento-titulo"
+                             "estado                    estado"
+                             "municipio                 municipio"
+                             "parroquia                 parroquia"
+                             "edo-civil                 edo-civil"
+                             " sexo                      edad"
+                             "profesion                 grado"
+                             "hijos                     hijos"
+                             "ninos                     ninas"
+                             "brasil                    brasil"
+                             "estado-br                 estado-br"
+                             "cidade-br                 cidade-br"
+                             "email                     telefono"
+                             "contacto-em               contacto-em"
+                             "num-em                    cont-em";
+    }
+
+    .mensaje > p:nth-child(1) {
+        font-size: 10px;
+    }
+    select{
+        width: 178px !important;
+    }
+
+    div.estado > select,
+    div.municipio > select,
+    div.parroquia > select{
+        width: 341px !important;
+    }
+
+    div.estado-br > select,
+    div.cidade-br > select{
+        width: 341px !important;
+    }
+    .contendor-formulario{
+        width: 100%;
+    }
+
+    .situacion-lb {
+        width: 52%;
+    }
+
+    .area-lb {
+        width: 75%;
+    }
+
+    .mensaje {
+        width: 90%;
+    }
+
+    .enviar button {
+        width: 204px;
+    }
+    .consular {
+        padding-right: 0px !important;
+    }
+
+    .migratorios select{
+         
+            width: 161px !important;
+        
+    }
+    .membrete{
+        margin-right: 20px;
+    }
+  }
+ 
